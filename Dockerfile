@@ -1,6 +1,4 @@
-FROM node:16
-
-ENV NODE_ENV=production
+FROM node:18
 
 WORKDIR /src/index.js
 
@@ -12,4 +10,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD [ "nodemon", "index.js" ]
+CMD [ "node", "index.js" ]
